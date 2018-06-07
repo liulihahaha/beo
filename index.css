@@ -1,9 +1,11 @@
 *{
 	margin: 0;
+	box-sizing:border-box;
 }
 .container{
 	width: 1024px;
 	margin:0 auto;
+	position: relative;
 }
 .header-box{
 	position: relative;
@@ -35,7 +37,7 @@
 .title{
 	font-weight: normal;
 	letter-spacing: 4px;
-	font-size: 30px;
+	font-size: 41px;
 	line-height: 39px;
 	margin-top: 15px;
 	margin-bottom: 24px;
@@ -50,8 +52,8 @@
 }
 .button{
 	display: block;
-	width: 202px;
-	line-height: 21px;
+	width: 232px;
+	line-height: 20px;
 	padding: 10px 40px;
 	background-color: rgba(255,255,255,0.1);
 	font-size: 12px;
@@ -59,12 +61,12 @@
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
-	margin-left: 35px;
+	margin-left: -5px;
 	margin-bottom: 8px;
 	margin-top: 8px;
 }
 .banner-box{
-	height: 305px;
+	height: 405px;
 	padding-bottom: 100px;
 	background: url(img-bg-1350.jpg);
 	background-size: 100% auto;
@@ -95,4 +97,224 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
+}
+.top-menu{
+	width: 100%;
+	height: 57px;
+	padding:0 22px;
+	line-height: 57px;
+	z-index: 2000;
+	font-weight: 300;
+	font-size: 12px;
+	display: flex;
+	justify-content:space-between;
+	position: absolute;
+}
+.left,.right{
+	width: 128px;
+	height: 100%;
+	float: left;
+	font-size: 12px;
+	font-weight: 300;
+	color: #fff;
+	line-height: 57px;
+	text-align: center;
+}
+.left{
+	background: url(product.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 25px;
+}
+.right{
+	background: url(menu.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 25px;
+}
+.center{
+	width: 191px;
+	height: 100%;
+	font-size: 20px;
+	font-weight: 100;
+    color: #fff;
+    text-align: center;
+}
+.row{
+	width:100%;
+	height: 318px;
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+.row h6{
+	width: 823px;
+	height: 13px;
+	margin: 0 auto;
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	line-height: 13px;
+    text-align: center;
+}
+.row h2{
+	width: 823px;
+	height: 120px;
+	/*background: blue;*/
+	margin:0 auto;
+	font-size: 50px;
+	font-weight: 500;
+	letter-spacing: 4px;
+	line-height: 60px;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+.product-list{
+	margin: 0 auto;
+	width: 100%; 
+	display: flex;
+	flex-wrap:wrap; 
+}
+.product{
+	width: 512px;
+	height: 512px;
+	position: relative;
+}
+.product:nth-child(1){
+    background: url(green-beosound-shape-tablet.jpg);
+    background-size:100% auto;
+}
+.product:nth-child(2){
+	background: url(tv.jpg);
+	background-size:100% auto;
+}
+.product:nth-child(3){
+	background: url(li.jpg);
+	background-size:100% auto;
+}
+.product:nth-child(4){
+	background: url(music.jpg);
+	background-size:100% auto;
+}
+.product:nth-child(5){
+	background: url(yy.jpg);
+	background-size:100% auto;
+}
+.product:nth-child(6){
+	background: url(sister.jpg);
+	background-size:100% auto;
+}
+.product h4{
+	font-size: 10.5px;
+	letter-spacing: 2px;
+	line-height: 13.7px;
+	font-weight: 500;
+	color: #fff;
+	text-align: left;
+	top: 55px;
+	left: 55px;
+	position: absolute;
+}
+.story{
+	width: 705px;
+	height: 168px;
+	margin:0 auto;
+    position:relative;
+    display: flex;
+}
+.pic1{
+    width: 176px;
+    height: 168px;
+    background: url(design-as-a-group-effort-01.jpg);
+    background-size: 100% auto;
+    position: absolute;
+}
+.pic2{
+	left: 176px;
+    width: 176px;
+    height: 168px;
+    background: url(the-krane.jpg);
+    background-size: 100% auto;
+    position: absolute;
+}
+.pic3{
+	left:334px;
+    width: 353px;
+    height: 168px;
+    background: url(harmonies-story.jpg);
+    background-size: 100% auto;
+    position: absolute;
+}
+.text{
+	width: 705px;
+	height: 125px;
+	margin:0 auto;
+    position:relative;
+    display: flex;
+    margin-top: 30px;
+}
+.case1-top{
+	width:167px; 
+	height:24px;
+	margin-bottom: 18px;
+}
+.case1-top h5{
+	width: 100%;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 24px;
+    color: #000;
+    text-align: left;
+}
+.case1-bottom{
+    width: 167px;
+    height: 82px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #000;
+    line-height: 21px;
+}
+.case2-top{
+	left: 167px;
+	width:167px; 
+	height:24px;
+	margin-bottom: 18px;
+}
+.case2-top h5{
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #000;
+	text-align: left;
+}
+.case2-bottom{
+	left: 167px;
+	width:167px;
+	height: 62px;
+	font-size: 13px;
+    font-weight: 300;
+    color: #000;
+    line-height: 21px;
+}
+.case3-top{
+    left:334px;
+    width: 335px;
+    height: 24px;
+    margin-bottom: 18px;
+}
+.case3-top h5{
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #000;
+	text-align: left;
+}
+.case3-bottom{
+	left: 334px;
+	width: 335px;
+	height: 62px;
+	font-size: 13px;
+	font-weight: 300;
+    line-height: 21px;
+    color: #000;
 }
